@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400&family=Raleway:wght@400;500;800&family=Roboto+Slab&family=Signika+Negative:wght@300;400;500&family=Space+Grotesk:wght@400;500&family=Ubuntu:wght@300;400;500&display=swap');
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: 'Josefin Sans', sans-serif;
+ background-color: white;
+ width: 100%;
+ /* height: 100vh; */
+ padding: 4em;
+ overflow: hidden;
+}
+.home-page {
+ width: 90%;
+ margin: 0 auto;
+ overflow: hidden;
+ position: relative;
+}
+header {
+ display: flex;
+ justify-content: space-between;
+}
+/* Right-bar */
+.right-bar {
+ width: 40%;
+}
+ul {
+ display: flex;
+ list-style: none;
+ justify-content: space-between;
+}
+.login {
+ /* margin-left: 4.5em; */
+ text-decoration: none;
+ text-transform: uppercase;
+}
+.login:hover {
+color: red;
+}
+
+nav ul li a {
+ text-decoration: none;
+ text-transform: uppercase;
+}
+nav ul li::after{
+ content: '';
+ margin: auto;
+ display: block;
+ width: 0%;
+ height: 3px;
+ background-color: red;
+ transition: all .5s;
+}
+nav ul li:hover::after{
+ width: 100%;
+}
+/* MAIN PAGE */
+.main-page {
+ display: flex;
+ margin-top: 7em;
+ position: relative;
+}
+/* LEFT SIDE */
+.left-side {
+ width: 50%;
+ padding: 1em;
+}
+h3 {
+ text-transform: uppercase;
+ letter-spacing: 3px;
+ margin-bottom: 2em;
+ color: hsl(225, 2%, 37%)
+}
+.new {
+ text-transform: uppercase;
+ background-color: rgb(68, 65, 65);
+ color: white;
+ font-size: .8rem;
+ padding: .4em;
+ border-radius: 15px;
+}
+h1 {
+ font-size: 2.9rem;
+ color: hsl(230, 29%, 20%)
+}
+p {
+ margin-top: 1.8em;
+ margin-bottom: 2.5em;
+ font-size: 1.1rem;
+ color: hsl(223, 6%, 23%)
+}
+.demo {
+ text-decoration: none;
+ padding: .8em;
+ background-color: hsl(0, 100%, 68%);
+ color: white;
+ border-radius: 5px;
+ margin-right: 2em;
+ font-size: 1rem;
+}
+.prew {
+ text-decoration: none;
+ color: hsl(225, 2%, 37%);
+ letter-spacing: 3px;
+}
+.prew:hover {
+ color: red;
+}
+@media (max-width: 375px) {
+ h1 {
+  font-size: 1.5rem;
+ }
+ p {
+  font-size: .8em;
+  margin: 1em 0 1em 0;
+ }
+ h3 {
+  font-size: .6rem;
+ }
+ .new {
+  font-size: .6rem;
+ }
+ .demo {
+  font-size: .6rem;
+  padding:.8em;
+ }
+ .prew {
+  font-size: .5rem;
+  letter-spacing: 2px;
+ }
+}
+.right-side {
+ width: 40%;
+}
+.ill-device{
+ width: 170%;
+ position: relative;
+ left: 50px;
+}
+.bg-color {
+ width: 60%;
+ height: 400px;
+ background-color: hsl(207, 33%, 95%);
+ z-index: -1; 
+ position: absolute;
+ top: -50px;
+ right:-150px;
+ border-radius: 40px;
+}
+.main, .close-tab {
+ display:none;
+}
+
+@media (max-width: 375px) {
+ body {
+  padding: 1em;
+ }
+ .loogo {
+   width: 60%;
+ }
+ .home-page {
+  width: 100%;
+  margin: 0;
+ }
+ .main-page {
+  margin-top: 4em;
+   flex-direction: column;
+   width: 100%;
+ }
+ ul {
+  flex-direction: column;
+ }
+ .bg-color {
+  right: -30px;
+  top: -100px;
+ }
+ .left-side {
+  width: 100%;
+  order: 2;
+ }
+ .right-side {
+  width: 100%;
+  order: 1;
+ }
+ .ill-device {
+  width: 90%;
+  top: -30px;
+  left: 150px;
+ }
+ .main {
+   display: block;
+  position: relative;
+  left:100px;
+ }
+  .close-tab {
+     width: 20px;
+     position: absolute;
+     top: -45px;
+     left: 250px;
+  }
+/* WORKING ON MENU AND CLOSE TAB */
+  .menu-list {
+   position: absolute;
+   left: 50px;
+   top: 50px;
+   transform: translate(-20px, 0px);
+   display: block;
+   z-index: 1000;
+   box-shadow: 0px 5px 10px rgb(197, 195, 195);
+   background-color: white;
+   text-align: center;
+   width: 250px;
+  }
+ ul li a {
+  display: block;
+  padding: .5em;
+ }
+ .login {
+  padding-top: 2em;
+  border-top: 2px solid rgb(199, 197, 197);
+  color: rgb(199, 197, 197)
+ }
+
+}
+ .hidden {
+    display: none;
+ }
