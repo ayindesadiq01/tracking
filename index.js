@@ -3,16 +3,17 @@ const main = document.querySelector('.main')
 const closeTab = document.querySelector('.close-tab')
 const menuList = document.querySelector('.menu-list')
 const hidden = document.querySelector('.hidden')
+const overlay = document.querySelector('.blur')
 
 main.addEventListener('click', function(){
- hidden.style.display = 'block';
- if ( hidden.style.display = 'block') {
-  main.classList.add('hidden')
- }
+ menuList.classList.remove('hidden');
+ overlay.classList.remove('hidden');
 });
 closeTab.addEventListener('click', function(){
-  hidden.style.display = 'none';
- if ( hidden.style.display = 'none') {
-  main.classList.remove('hidden')
- }
+   menuList.classList.add('hidden');
+   overlay.classList.add('hidden');
 });
+overlay.addEventListener('click', function(){
+   menuList.classList.add('hidden');
+   overlay.classList.add('hidden');
+})
